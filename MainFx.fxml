@@ -7,14 +7,14 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="439.0" prefWidth="463.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="439.0" prefWidth="463.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
    <children>
       <Label alignment="CENTER" layoutX="-1.0" layoutY="-1.0" prefHeight="63.0" prefWidth="463.0" text="Hello App" textFill="#459e8f">
          <font>
             <Font name="Bodoni MT Bold Italic" size="57.0" />
          </font>
       </Label>
-      <TextField layoutX="141.0" layoutY="124.0" prefHeight="25.0" prefWidth="180.0" promptText="Type your username" />
+      <TextField fx:id="UsernameTextField" layoutX="141.0" layoutY="124.0" prefHeight="25.0" prefWidth="180.0" promptText="Type your username" />
       <Label alignment="CENTER" layoutY="96.0" prefHeight="25.0" prefWidth="463.0" text="Username">
          <font>
             <Font name="System Bold" size="19.0" />
@@ -25,8 +25,8 @@
             <Font name="System Bold" size="19.0" />
          </font>
       </Label>
-      <PasswordField layoutX="141.0" layoutY="214.0" prefHeight="25.0" prefWidth="180.0" promptText="Type your password" />
-      <Button layoutX="141.0" layoutY="285.0" mnemonicParsing="false" text="Login" />
-      <Button layoutX="267.0" layoutY="285.0" mnemonicParsing="false" text="Logout" />
+      <PasswordField fx:id="PasswordField" layoutX="141.0" layoutY="214.0" prefHeight="25.0" prefWidth="180.0" promptText="Type your password" />
+      <Button fx:id="LoginButton" layoutX="141.0" layoutY="285.0" mnemonicParsing="false" onAction="#Login" text="Login" />
+      <Button fx:id="LogoutButton" layoutX="267.0" layoutY="285.0" mnemonicParsing="false" onAction="#Logout" text="Logout" />
    </children>
 </AnchorPane>

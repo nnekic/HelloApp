@@ -22,10 +22,6 @@ public class Main extends Application {
 			primaryStage.setScene(scene);
 			primaryStage.setResizable(false);
 			primaryStage.show();
-			String ip = IpAppRetrieve.getIp();
-            String ipInfo = ApiClient.sendGetRequest(ip); //ApiClient not needed. I'll use public IP
-            String greeting = HelloSalut.Greeting(ip);
-            System.out.println("Greeting: " + greeting);
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
